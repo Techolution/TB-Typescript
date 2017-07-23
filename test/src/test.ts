@@ -17,4 +17,5 @@ class BootCampTest {
 
 let bootcamp = new BootCampTest();
 
+bootcamp.setName('Larry');
 bootcamp.hello();
