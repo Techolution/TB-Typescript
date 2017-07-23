@@ -1,4 +1,4 @@
-# typescript-bootcamp
+# Techolution Bootcamp: Typescript
 
 ## Setup
 
