@@ -10,4 +10,4 @@
     npm install -g typescript
     ```
 
-3. At the command line, cd into the test directory and run `tsc` at the command line and verify that a new `test.js` file is generated at test/build/test.js.  
+3. At the command line, cd into the test directory and type `tsc` at the command line and press enter. Verify that a new `test.js` file is generated at test/build/test.js.  The `tsc` command is the typescript command the transpiles your typescript code.
