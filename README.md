@@ -10,4 +10,10 @@
     npm install -g typescript
     ```
 
-3. At the command line, cd into the test directory and type `tsc` at the command line and press enter. Verify that a new `test.js` file is generated at test/build/test.js.  The `tsc` command is the typescript command the transpiles your typescript code.
+3. From the command line, cd into the test directory and type `tsc` at the command line and press enter. Verify that a new `test.js` file is generated at test/build/test.js.  The `tsc` command is the typescript command that transpiles your typescript code.
+
+4. From the command line, cd into the root of this project and run `npm install`.  This will install a local server and css library called bootstrap.
+
+5. From the command line run `npm start`.  You should see a terminal message telling you that a server is running on port 8000. In a browser, open up http://localhost:8000/. 
+
+6. For each exercise you should make sure that your server is running ( see previous step ), cd into the exercise directory, and run the `tsc` command from the exercise directory.  For example, if you are working on Exercise-2_0 you would `cd` into  Exercise-2_0/ and run `tsc` at the command line. 
