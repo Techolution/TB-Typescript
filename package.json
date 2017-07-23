@@ -1,0 +1,28 @@
+{
+  "name": "typescript-bootcamp",
+  "version": "1.0.0",
+  "description": "Techolution Bootcamp for Typescript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "simplehttpserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORIGINALUSRNM/typescript-bootcamp.git"
+  },
+  "author": "Jason Hornbuckle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ORIGINALUSRNM/typescript-bootcamp/issues"
+  },
+  "homepage": "https://github.com/ORIGINALUSRNM/typescript-bootcamp#readme",
+  "devDependencies": {
+    "simplehttpserver": "0.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

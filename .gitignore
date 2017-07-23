@@ -1,2 +1,3 @@
 *.js
 test/build
+node_modules
