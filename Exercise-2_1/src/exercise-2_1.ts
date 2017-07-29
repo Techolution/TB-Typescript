@@ -10,7 +10,7 @@
 //      anytime you save the file. When you are done, don't forget to stop the watch by typing ctrl + c in the terminal 
 //      to exit it.
 //
-//      Tip #2: Work your way through the typescript errors in the console one at a time starting with the top one.
+//      Tip #2: Work your way through the typescript errors in the terminal console one at a time starting with the top one.
 function messedUpTypes() {
     let occupation = "Teacher";
     let name: string = 100;
@@ -61,7 +61,9 @@ function messedUpTypes() {
 
 // }
 
-//3. object, hash and array types
+//3. Set the type on customObject so that it is an object with a label property which is a string and an id property which
+//   is a number;
+let customObject;
 
 
 // DON't FORGET to type ctrl + c in the terminal when done to stop the typescript compiler from watching!
