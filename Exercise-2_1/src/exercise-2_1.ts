@@ -61,6 +61,8 @@ function messedUpTypes() {
 
 // }
 
+//3. object, hash and array types
+
 
 // DON't FORGET to type ctrl + c in the terminal when done to stop the typescript compiler from watching!
 
