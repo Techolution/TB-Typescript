@@ -4,7 +4,6 @@
 //     
 //     Create another .ts file in this directory that exports an IAnimal interface then import that interfce into 
 //     this file in order to get rid of the typescript compiler errors.
-interface IAnimal {}
 
 class Cat implements IAnimal {
 
