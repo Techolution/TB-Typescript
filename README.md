@@ -17,3 +17,7 @@
 5. From the command line run `npm start`.  You should see a terminal message telling you that a server is running on port 8000. In a browser, open up http://localhost:8000/. 
 
 6. For each exercise you should make sure that your server is running ( see previous step ), cd into the exercise directory, and run the `tsc` command from the exercise directory.  For example, if you are working on Exercise-2_0 you would `cd` into  Exercise-2_0/ and run `tsc` at the command line. 
+
+## Solutions
+
+There is a branch called 'solutions' that you may checkout to view solutions for the exercises.
