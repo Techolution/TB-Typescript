@@ -55,9 +55,9 @@ let xx: (x: string[]) => string[] = function(names: string[]) {
 
 //////////////////
 //4. Uncomment out the function baz. Why is this function declaration causing a typescript error?  How can you fix it?
-// function baz(a: string, b?: string, c: number) {
+function baz(a: string, c: number, b?: string) {
 
-// }
+}
 
 //////////////////
 //5.  Start the server if it is not already running by typing npm start in the root.  The object xyz below returns a function when
@@ -67,9 +67,7 @@ let xx: (x: string[]) => string[] = function(names: string[]) {
 var xyz = {
     name: 'xyz',
     setup: function() {
-        return function() {
-            alert(this.name);
-        }
+        return () => alert(this.name);
     }
 };
 
@@ -80,7 +78,7 @@ let xyzApp = xyz.setup();
 //   Unfortunately, it is currently broken and only returning an empty array!  
 //   What is wrong here?  Fix this code!  In a browser, open up the browser cosole to view the console output and click
 //   on the filterCookies button.
-let filterMyCookies = (cookies: string[]) => cookies.filter((cookie) => { cookie.indexOf('chocolate') !== -1 } ) ;
+let filterMyCookies = (cookies: string[]) => cookies.filter((cookie) => { return cookie.indexOf('chocolate') !== -1 } ) ;
 let cookies = ['chocolate chip', 'peanut butter', 'sugar', 'chocolate crunch'];
 
 var filterCookies = function() {
@@ -93,6 +91,9 @@ var filterCookies = function() {
 //    typescript compiler.  Calling myOverloadedFunc with no arugments has already been done for you. Uncomment
 //    the variables results2, results3, and results4 below to begin.
 function myOverloadedFunc(): boolean;
+function myOverloadedFunc(x:string): { label: string };
+function myOverloadedFunc(x:number): number;
+function myOverloadedFunc(x:string, y:number): string;
 function myOverloadedFunc(x: any = false, y: number = 0): any {
     if (x && y) {
         if (typeof x === 'string' && typeof y === 'number') {
@@ -114,6 +115,6 @@ function myOverloadedFunc(x: any = false, y: number = 0): any {
 }
 
 let results1: boolean = myOverloadedFunc();
-// let results2: { label:string } = myOverloadedFunc('red');
-// let results3: number = myOverloadedFunc(100);
-// let results4: string = myOverloadedFunc('red', 100);
+let results2: { label:string } = myOverloadedFunc('red');
+let results3: number = myOverloadedFunc(100);
+let results4: string = myOverloadedFunc('red', 100);
