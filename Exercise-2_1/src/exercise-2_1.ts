@@ -51,19 +51,19 @@ function messedUpTypes() {
 //      Because of unclear business requirements the price passed into the method below may sometimes be a number and 
 //      sometimes be a string.  Fix the code by only changeing types so that it compiles without error.
 
-// function unclearSpec(price: number) {
+function unclearSpec(price: number|string) {
 
-//     if (typeof price === 'number') {
-//         price + 10;
-//     } else {
-//         price = "Free";
-//     }
+    if (typeof price === 'number') {
+        price + 10;
+    } else {
+        price = "Free";
+    }
 
-// }
+}
 
 //3. Set the type on customObject so that it is an object with a label property which is a string and an id property which
 //   is a number;
-let customObject;
+let customObject: { label: string, id: number }
 
 
 // DON't FORGET to type ctrl + c in the terminal when done to stop the typescript compiler from watching!
