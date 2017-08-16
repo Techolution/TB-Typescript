@@ -13,17 +13,17 @@
 //      Tip #2: Work your way through the typescript errors in the terminal console one at a time starting with the top one.
 function messedUpTypes() {
     let occupation = "Teacher";
-    let name: string = 100;
+    let name: string = "Bob";
     let hasMoney: boolean = false;
-    let hasCar: boolean = "false";
+    let hasCar: boolean = true;
     let money: number = 5.50;
     let hasDebt:boolean = true;
-    let debt: number = true;
+    let debt: number = 10000;
     let debtMessage: string = `Danger! You owe: ${debt} but only have ${money}!`;
-    let friends = number[] = ['John', 'Leon', 'Peter', 'Kumar', 'Alice'];
+    let friends: string[] = ['John', 'Leon', 'Peter', 'Kumar', 'Alice'];
 
     let askForMoney = function(friend: string): boolean {
-        let willLend: number = false;
+        let willLend: boolean = false;
 
         for(let i = 0; i < friends.length; i++) {
             if (friends[i] === friend) {
@@ -35,7 +35,7 @@ function messedUpTypes() {
         return willLend;
     }
 
-    occupation = 200;
+    occupation = "Baker";
 
     if (hasDebt) {
         console.log(debtMessage);
