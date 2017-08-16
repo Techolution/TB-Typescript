@@ -36,7 +36,7 @@ function keepPiConstant() {
 }
 
 // 3.  You want to keep secretName scoped to the if block. Fix the code so that the compiler catches this
-//     error before production.
+//     error before production and then change the alert message to say, "Secret Safe!"
 function keepItInTheBlock() {
     
     if (true) {
