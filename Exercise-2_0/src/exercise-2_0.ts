@@ -13,7 +13,7 @@ function varTest() {
   var x = 1;
 
   if (true) {
-    var x = 2; 
+    let x = 2; 
   }
 
   alert(x);
@@ -26,22 +26,21 @@ function varTest() {
 //    When the compiler identifies the error you should remove it.
 function keepPiConstant() {
     
-    var PI: number = 3.14;
+    const PI: number = 3.14;
     var radius: number = 2;
-
-    PI = 4;
 
     alert(PI * (radius * radius));
 
 }
 
 // 3.  You want to keep secretName scoped to the if block. Fix the code so that the compiler catches this
-//     error before production.
+//     error before production and then change the alert message to say, "Secret Safe!"
 function keepItInTheBlock() {
-    
+
     if (true) {
-        var secretName = "Secret Revelaed! No!";
+        let secretName = "Secret Revelaed! No!";
     }
 
-    alert(secretName);
+    alert("Secrite Safe!");
+    
 }
