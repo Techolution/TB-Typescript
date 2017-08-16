@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ORIGINALUSRNM/typescript-bootcamp#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.73",
     "simplehttpserver": "0.0.6"
   },
   "dependencies": {
