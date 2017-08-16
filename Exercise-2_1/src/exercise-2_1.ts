@@ -18,7 +18,7 @@ function messedUpTypes() {
     let hasCar: boolean = true;
     let money: number = 5.50;
     let hasDebt:boolean = true;
-    let debt: number = 10000;
+    let debt: number = 10;
     let debtMessage: string = `Danger! You owe: ${debt} but only have ${money}!`;
     let friends: string[] = ['John', 'Leon', 'Peter', 'Kumar', 'Alice'];
 
